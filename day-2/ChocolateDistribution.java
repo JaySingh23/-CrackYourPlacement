@@ -13,7 +13,6 @@ public class ChocolateDistribution {
     private static int getMinDiff(int[] arr, int m, int n) {
         int min = Integer.MAX_VALUE;
         Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
         //sliding window approach
         for (int i = 0; i+m-1 < n; i++) {
             min = Math.min(min, arr[i+m-1] - arr[i]);
